@@ -13,6 +13,7 @@ int main(){
     for(int i = 0; i < l; i++){
         if(arr[i] == key){
             value = 1;
+            break;
         }
     }
     if(value){
