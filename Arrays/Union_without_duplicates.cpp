@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits.h>
 #include <vector>
 using namespace std;
 
@@ -10,14 +11,14 @@ int main(){
     for(int i=0; i<arr.size(); i++){
         for(int j=0; j<brr.size(); j++){
             if(arr[i] == brr[j]){
-                brr[j]=-1; //to mark the element
-                ans.push_back(arr[i]);
+                brr[j]=INT_MIN; //to mark the element
+                if(brr[j] != INT_MIN){
+                    ans.push_back(arr[i]);
+                }
             }
         }
     }
     //Printing the ans array
-    cout<<"The final elements after the intersection are: ";
-    for(int k=0; k<ans.size(); k++){
-        cout<<ans[k]<<" ";
-    }
+    cout<<"The final elements after the union are: ";
+    for(auto i : ans) cout << i << " ";
 }
