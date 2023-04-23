@@ -1,18 +1,13 @@
 #include <iostream>
-#include <limits.h>
 using namespace std;
 
-//Creating function to print Max no of the array
-int MaxElement(int arr[][3], int rows, int cols){
-    int maxim = INT_MIN;
+//Creating function to print Transpose of the array
+void TransposeArr(int arr[][3], int rows, int cols){
     for(int i=0; i < rows;i++){
         for(int j=0; j < cols; j++){
-            if(arr[i][j] > maxim){
-                maxim=arr[i][j];
-            }
+            swap(arr[i][j], arr[j][i]);
         }
     }
-    return maxim;
 }
 
 
@@ -37,6 +32,6 @@ int main(){
         }
         cout<<endl;
     }
-    cout<<"The maximum element in the array is : "<<MaxElement(arr, rows, cols);
+    cout<<"The Transpose of the array is : "<< T(arr, rows, cols);
     return 0;
 }
