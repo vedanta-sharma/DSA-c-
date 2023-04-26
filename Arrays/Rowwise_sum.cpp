@@ -13,6 +13,7 @@ void printRowwiseSum(int arr[][3], int rows, int cols){
     }
 }
 
+//Defining main function
 int main(){
     int arr[3][3];
     int rows =3;
