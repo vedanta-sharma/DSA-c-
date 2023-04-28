@@ -15,7 +15,7 @@ int MaxElement(int arr[][3], int rows, int cols){
     return maxim;
 }
 
-
+//Defining the function
 int main(){
     int arr[3][3];
     int rows =3;
