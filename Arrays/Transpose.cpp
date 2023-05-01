@@ -10,7 +10,6 @@ void TransposeArr(int arr[][3], int rows, int cols){
     }
 }
 
-//main function
 
 int main(){
     int arr[3][3];
