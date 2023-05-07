@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-//Main function
+
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
